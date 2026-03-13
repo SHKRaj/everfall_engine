@@ -64,7 +64,7 @@ def initialize_database():
         location TEXT,
         status TEXT DEFAULT 'active',
         FOREIGN KEY (nation_id) REFERENCES nations(id),
-        FOREIGN KEY (unit_type_id) REFERENCES unit_types(id)
+        FOREIGN KEY (unit_type_id) REFERENCES unit_types(id),
         army_group_id INTEGER,
         FOREIGN KEY (army_group_id) REFERENCES army_groups(id)
     )
